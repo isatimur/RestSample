@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/rowselector">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="4dp" >
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/blank" />
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:layout_toRightOf="@+id/avatar"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login"
+            android:layout_marginLeft="4dip"
+            android:layout_toRightOf="@+id/avatar"
+            android:text="TextView" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/row_button"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="Button" />
+
+</RelativeLayout>
